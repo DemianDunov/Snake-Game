@@ -3,7 +3,7 @@ const ctx = canvas.getContext("2d");
 const scoreText = document.getElementById("score");
 
 const GRID = 16;
-const TILE = 10;
+const TILE = 16;
 
 canvas.width = GRID * TILE;
 canvas.height = GRID * TILE;
@@ -158,5 +158,6 @@ function resetGame() {
 
 init();
 setInterval(loop, 120);
+
 
 
