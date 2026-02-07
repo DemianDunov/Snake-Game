@@ -95,7 +95,7 @@ function update() {
     head.x >= GRID || head.y >= GRID
   ) {
     gameOver = true;
-    alert("GAME OVER, MAP KECIL MASIH NUBRUK");
+    alert("GAME OVER, GOBLOK LU");
     return;
   }
 
@@ -103,7 +103,7 @@ function update() {
   for (let i = 1; i < snake.length; i++) {
     if (head.x === snake[i].x && head.y === snake[i].y) {
       gameOver = true;
-      alert("GAME OVER, MAKAN DIRI SENDIRI");
+      alert("GAME OVER, SKILL ISSUE LU");
       return;
     }
   }
@@ -211,6 +211,7 @@ function resetGame() {
 // ==================
 init();
 setInterval(loop, 180);
+
 
 
 
