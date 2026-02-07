@@ -5,7 +5,7 @@ const scoreText = document.getElementById("score");
 // ==================
 // CONFIG
 // ==================
-const GRID = 12;          // grid kecil
+const GRID = 20;          // grid kecil
 let TILE = 10;           // KOTAK GEDE (nanti auto scale)
 
 let snake, direction, food, score, gameOver;
@@ -211,6 +211,7 @@ function resetGame() {
 // ==================
 init();
 setInterval(loop, 180);
+
 
 
 
