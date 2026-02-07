@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game Nokia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>🐍 Snake Game</h2>
+  <p>Score: <span id="score">0</span></p>
+
+  <canvas id="game"></canvas>
+
+  <div class="controls">
+    <button onclick="setDirection('UP')">⬆️</button>
+    <div>
+      <button onclick="setDirection('LEFT')">⬅️</button>
+      <button onclick="setDirection('DOWN')">⬇️</button>
+      <button onclick="setDirection('RIGHT')">➡️</button>
+    </div>
+  </div>
+
+  <button class="reset" onclick="resetGame()">RESET</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
