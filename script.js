@@ -210,6 +210,7 @@ function resetGame() {
 
 // ==================
 init();
-setInterval(loop, 210);
+setInterval(loop, 180);
+
 
 
