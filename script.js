@@ -2,8 +2,8 @@ const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 const scoreText = document.getElementById("score");
 
-const GRID = 32;
-const TILE = 16;
+const GRID = 16;
+const TILE = 10;
 
 canvas.width = GRID * TILE;
 canvas.height = GRID * TILE;
@@ -60,14 +60,14 @@ function update() {
 
   if (head.x < 0 || head.y < 0 || head.x >= GRID || head.y >= GRID) {
     gameOver = true;
-    alert("GAME OVER, NUBRUK TEMBOK BEGO");
+    alert("GAME OVER, ANDA TERKENA TEMBOK");
     return;
   }
 
   for (let part of snake) {
     if (head.x === part.x && head.y === part.y) {
       gameOver = true;
-      alert("GAME OVER, ULAR MAKAN DIRI SENDIRI");
+      alert("GAME OVER, ANDA TERKENA BAGIAN DIRI ANDA");
       return;
     }
   }
